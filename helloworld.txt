@@ -1,0 +1,76 @@
+public class Message implements Serializable {
+
+    private static final long serialVersionUID = 3615539238355049276L;
+
+    private Boolean flag;
+
+    private String info;
+
+    private boolean mark;
+
+    private int number;
+
+    private Integer total;
+
+    public Boolean getFlag() {
+        return flag;
+    }
+
+    public void setFlag(Boolean flag) {
+        this.flag = flag;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
+    }
+
+    public boolean isMark() {
+        return mark;
+    }
+
+    public void setMark(boolean mark) {
+        this.mark = mark;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public Integer getTotal() {
+        return total;
+    }
+
+    public void setTotal(Integer total) {
+        this.total = total;
+    }
+
+    public Message(Boolean flag, String info, boolean mark, int number, Integer total) {
+        this.flag = flag;
+        this.info = info;
+        this.mark = mark;
+        this.number = number;
+        this.total = total;
+    }
+
+    public Message() {
+    }
+
+    @Override
+    public String toString() {
+        return "Message{" +
+                "flag=" + flag +
+                ", info='" + info + '\'' +
+                ", mark=" + mark +
+                ", number=" + number +
+                ", total=" + total +
+                '}';
+    }
+}
